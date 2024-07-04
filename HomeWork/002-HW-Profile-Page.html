@@ -5,6 +5,7 @@
       Profile Page - Second Session - HomeWork No.1 - Ahmad PanahiFar
     </title>
     <style>
+
       .whole-page {
         display: grid;
         grid-template-rows: 90% 10%;
@@ -27,8 +28,6 @@
           .profile-pic-container {
             display: grid;
             vertical-align: middle;
-          
-          
           }
             .profile-image {
               display: block;
@@ -155,17 +154,16 @@
             border-radius: 30px;
           }
 
-
     </style>
   </head>
   <body>
-    <div class="whole-page">
-      <div class="info-part">
-        <div class="first-column-container">
+    <div class="whole-page">    <!-- The whole page is divided to two div rows to use grid: info part and submit button part. -->
+      <div class="info-part">    <!-- Info part is devided to two div columns. --> 
+        <div class="first-column-container">    <!-- The left column is divided to two rows: 1.User's name and picture 2.User's social media contact information. -->
           <div class="profile-pic-container 
           ">
             <div>
-              <img src="/zz-images/Avatar-Placeholder.jpg" id="profile-picture" class="profile-image" title="Upload Your Photo Here">
+              <img src="/zz-images/Avatar-Placeholder.jpg" id="profile-picture" class="profile-image" title="Upload Your Photo Here">    <!-- This image is not interactive due to my lack of javascript knowledge.  -->
             </div>
             <div>
               <input type="text" id="user-name" class="user-name-bar" placeholder="Please Write Your Username">
@@ -206,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="secod-column-container">
+        <div class="secod-column-container">    <!-- The right column is divided to two div rows: 1.User's personal information 2.User's skills and job experiences. -->
           <div class="id-container">
             <div class="detailed-id-container">
               <div class="id-info-container">
@@ -258,7 +256,7 @@
           </div>
         </div>
       </div>
-      <div class="button-container">
+      <div class="button-container">    <!-- This button is not working due to my lack of javascript knowledge to make it interactive. -->
         <button title="Save & Submit">
           Submit
         </button>
