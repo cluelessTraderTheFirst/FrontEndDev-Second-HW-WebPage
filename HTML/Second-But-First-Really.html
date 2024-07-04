@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>Snd-But-Fst</title>
+    <style>
+      /* css structure is like this 
+       selector{
+       property: value;
+       }
+      */
+      p {
+        padding-left: 10px;
+      }
+
+      h1 {
+        color: rgb(236, 214, 10);
+        padding: 15px;
+      }
+
+      b {
+        background-color: aquamarine;
+      }
+      
+      .striker {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+
+      .hello, h4 { /* to select multiple class in css simply use ',' */
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+        text-align: center;
+        color: darkred;
+        background-color: chartreuse;
+      }
+
+      span {
+        background-color: rgb(17, 14, 202);
+        color: rgb(240, 241, 247);
+        border: 5px solid black; /* some properties could have several value*/
+        border-radius: 10px;
+      }
+
+      .inline-block-defination {
+        display: inline;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>hi hi hi</p>
+    <p><b>Khoobi ?</b></p> <!-- b for bolding text-->
+    <p><img src="" alt=""></p> <!-- tags like img who doesnt have end tag are called self closing tag, in this kinds of tag backslash is used on behalf of end tag and sometimes we dont even use \ in them -->
+    <p>
+      <a href="http:\\google.com" target="_blank">Google</a> <!-- a is a tag to creat a link, href attribute gives the source of that link, target attribute determine wether the link open as a new page or instead of main page -->>
+      <a href="https://www.gettyimages.com/detail/photo/orange-royalty-free-image/185284489?adppopup=true" target="_blank">
+        <img src="https://media.gettyimages.com/id/185284489/photo/orange.jpg?s=2048x2048&w=gi&k=20&c=g89OnJ5bDCnmQR0p7GdM10v_s3lESuMACUEavHF2oh0=" width="100px">
+      </a>
+    </p>
+    <h1> 
+      in html h1 to h6 are used to define a title in a text
+    </h1>
+    <h4>
+      h1 is the largest font or main title and h6 is the smallest one
+    </h4>
+    <p> 
+      p is used to define a <b>Paragraph</b> and devide text 
+    </p>
+    <p>
+      we can use i tag to make font <i>Italic</i>
+    </p>
+    <p class="striker"> <!-- anything that come inside in start tag of html such as 'class' and get a value is called 'attribute'. attribute structure is like thus 'attribute="value" -->>
+      tag s is used to <s>Strike a line</s> in middle of a word
+    </p>
+    <p>
+      u is for <u>Underline</u> a word
+    </p>
+    <p class="striker">
+       sup is used for make a <sup>power</sup>  like E=mc <sup>2</sup>
+    </p>
+    <p>
+      br tag will break a line and <br>go to next line
+    </p>
+    <p>
+      strong is also used <strong>for bolding</strong> text
+    </p>
+    <p class="hello">
+      css <span>test</span> Hello World! <!-- span do nothing but to select a part of text to give it a class, also its an inline tag unlike div that is a block tag -->
+    </p>
+    <p class="inline-block-defination">
+        paragraphs definee as a block by default and take whole line
+    </p>
+    <p class="inline-block-defination">
+      ....but by using display-inline property we can limit it to its size
+    </p>
+    <p>
+      so the famous div tag make a <div>defined block which take entire line</div> so you can edit your webpage as tou want
+    </p>
+
+  </body>
+</html>
