@@ -1,0 +1,39 @@
+
+.gift-box ,.just-box{
+background-color: gray;
+width: 100px;
+height: 100px;
+padding: 12px;
+border: 8px solid red;
+margin: 12px;
+text-align: center;
+}
+
+.gift-box {
+box-sizing: border-box; /* to set defined width and height as the total of content+padding+border+margin */
+}
+
+.just-box {
+  box-sizing: content-box; /* default of css , its set the given size or height or width as the contentt size only. */
+  border-color: #0000ff;
+}
+
+* {
+  /* for choosing all items. :: is called pseudo-element */
+}
+
+div ul { /* using tree model and parents and grandparents to choose an item is another way to select */
+  background-color: #ffff00;
+}
+
+p strong { /* eventhough p is grand parent to strong, it was selected, so choosing by space is very risky because it may choose other objects that have some similar roots */
+  background-color: aqua;
+}
+
+.main li {/* we can also choose class as parent */
+  background-color: chartreuse;
+}
+
+p > strong { /* > means p is direct parent to strong, in contrast to space which find any ancestor acceptable */
+  background-color: crimson;
+}
