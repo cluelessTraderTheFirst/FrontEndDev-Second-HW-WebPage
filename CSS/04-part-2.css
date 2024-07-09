@@ -1,3 +1,67 @@
+
 body {
-  
+ /* direction: rtl;   for writting persian- note that in rtl mode flex box act inverse */
 }
+
+.flexbox-container {
+display: flex;
+width: 100px;
+height: 100px;
+background-color: grey;
+flex-direction: row-reverse;
+flex-wrap: nowrap;
+margin-bottom: 5px;
+}
+
+.item {
+  background-color: red;
+  width: 50px; /* if width of item exceed flex length, in no-wrap mode, it will shrink box to fit items. in wrap mode it will go to next line */
+
+}
+
+.flex-2 {
+  background-color: blue;
+}
+
+.flexbox2-container {
+  display: flex;
+width: 100px;
+height: 100px;
+background-color: grey;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between; /* on main direction */
+align-items: center; /* on cross direction */
+margin-bottom: 5px;
+}
+
+.item2 {
+  background-color: yellow;
+  width: 25px;
+}
+
+.flex-b {
+  background-color: magenta;
+}
+
+.flexbox3-container {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(187, 187, 187);
+  flex-direction: column; /* in coloumn main and cross direction will switch */
+  flex-wrap: nowrap;
+  margin-bottom: 5px;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  .item3 {
+    background-color: red;
+    height: 22px;
+    width: 22px;
+  }
+  
+  .flex-5 {
+    background-color: blue;
+  }
