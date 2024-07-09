@@ -1,0 +1,25 @@
+#ordered-list {
+  background-color: yellow; /* another way to select an item is using id and #. common practice is id must be unique */
+} /* never put ; at the end of } in css, it will terminate styling  */
+
+h2, .s1{
+  background-color: aqua;
+  color: red;
+}
+
+.email-input {
+  border-color: red;
+  border: solid;
+  background-color: rgb(229, 110, 233);
+}
+.email-input:focus {
+ border-color: yellow; /* when clicked */
+ background-color: rgb(50, 83, 83);
+}
+.email-input:hover {
+  background-color: aqua;
+}
+button:active {
+  background-color: greenyellow; /* when hold your click */
+}
+ 

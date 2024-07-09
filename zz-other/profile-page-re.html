@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Profile Page - Second Session - HomeWork No.1 - Ahmad PanahiFar
+    </title>
+    <style>
+
+      .whole-page {
+        display: grid;
+        grid-template-rows: 90% 10%;
+        background-color: aqua;
+      }
+
+        .info-part {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+         
+        }
+
+          .profile-pic-container
+          , .id-container, .digital-info-container, .about-container {
+            padding: 5px;
+            margin: 3px;
+            height: 250px;
+          }
+
+          .profile-pic-container {
+            display: grid;
+            vertical-align: middle;
+          }
+            .profile-image {
+              display: block;
+            height: 150px;
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100px;
+            padding-top: 10px;
+            cursor: pointer;
+            }
+            .user-name-bar {
+              height: 50%;
+              width: 70%;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+            }
+
+
+          .digital-info-container {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          }
+            .email, .github, .facebook, .tweeter {
+              display: grid;
+              grid-template-columns: 1fr 1fr 2fr;
+              align-self: center;
+            }
+            .logo {
+              width: 25px;
+              height: 25px;
+              border-radius: 15px;
+              margin-left: 10px;
+              margin-right: 10px;
+              cursor: pointer;
+            }
+            .social-media-bar {
+              display: block;
+              height: 60%;
+              width: 220%;
+              border-radius: 5px;
+              border-color: rgb(17, 172, 82);
+              text-align: center;
+            }
+
+          .id-container, .address-container, .homeland-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+          }
+            .detailed-id-container {
+              display: grid;
+              grid-template-rows: 1fr 1fr 1fr;
+              margin-top: 5px;
+            }
+            .id-info-container {
+              display: grid;
+              grid-template-columns: 1fr 2fr;
+            }
+            .id-info-bar {
+              width: 250px;
+              height: 25px;
+              text-align: center;
+            }
+            .description-text {
+              display: block;
+              margin: auto;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              cursor: context-menu;
+            }
+            .country-container, .city-container {
+              display: grid;
+              grid-template-columns: 1fr 2fr;
+              margin: 2px;
+            }
+            .address-bar {
+              display: block;
+              height: 80%;
+              width: 90%;
+              margin-top: 3px;
+              text-align: center;
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+          .about-container {
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+          }
+            .skill-set-bar {
+              width: 80%;
+              height: 80%;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+            }
+          
+        .button-container {
+          margin: 0%;
+          padding-bottom: 15px;
+        }
+          button {
+            display: block;
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            margin: auto;
+            font-weight: bold;
+            font-size: large;
+            color: chartreuse;
+            background-color: blueviolet;
+            cursor: pointer;
+            transition-duration: 2s;
+          }
+          button:hover {
+            background-color: chartreuse;
+            color: blueviolet;
+            border: solid;
+            border-color: black;
+            border-radius: 30px;
+          }
+
+    </style>
+  </head>
+  <body>
+    <div class="whole-page">    <!-- The whole page is divided to two div rows to use grid: info part and submit button part. -->
+      <div class="info-part">    <!-- Info part is devided to two div columns. --> 
+        <div class="first-column-container">    <!-- The left column is divided to two rows: 1.User's name and picture 2.User's social media contact information. -->
+          <div class="profile-pic-container 
+          ">
+            <div>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRFd4pMre1853kAg0wedtKABD31ViWcGLojQ&s" class="profile-image">    <!-- This image is not interactive due to my lack of javascript knowledge.  -->
+            </div>
+            <div>
+              <input type="text" id="user-name" class="user-name-bar" placeholder="Please Write Your Username">
+            </div>
+          </div>
+          <div class="digital-info-container">
+            <div class="email">
+              <div class="logo-container">
+                <img src="https://leadsbridge.com/wp-content/themes/leadsbridge/img/integration-lg-logos/logo172.png" class="logo" title="E-Mail">
+              </div>
+              <div class="text-bar">
+                <input type="text" id="email" placeholder="Email Address" class="social-media-bar">
+              </div>
+            </div>
+            <div class="github">
+              <div class="logo-container">
+                <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png"  class="logo" title="Github">
+              </div>
+              <div class="text-bar">
+                <input type="text" id="github" placeholder="Github ID" class="social-media-bar">
+              </div>
+            </div>
+            <div class="facebook">
+              <div class="logo-container">
+                <img src="https://i.pinimg.com/236x/63/a2/31/63a231592efca78f2bcbc02267eb37be.jpg"  class="logo" title="Facebook">
+              </div>
+              <div class="text-bar">
+                <input type="text" id="facebook" placeholder="Facebook ID" class="social-media-bar">
+              </div>
+            </div>
+            <div class="tweeter">
+              <div class="logo-container">
+                <img src="https://icon2.cleanpng.com/20240119/ta/transparent-x-logo-logo-brand-identity-company-organization-black-background-white-x-logo-for-1710915881389.webp"  class="logo" title="X">
+              </div>
+              <div>
+                <input type="text" id="tweeter" placeholder="X Handle" class="social-media-bar">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="secod-column-container">    <!-- The right column is divided to two div rows: 1.User's personal information 2.User's skills and job experiences. -->
+          <div class="id-container">
+            <div class="detailed-id-container">
+              <div class="id-info-container">
+                <div class="description-text">Full Name:</div>
+                <div>
+                  <input type="text" id="real-name" class="id-info-bar" placeholder="Please Write Your Full Name Here">
+                </div>
+              </div>
+              <div class="id-info-container">
+                <div class="description-text">ID Number:</div>
+                <div>
+                  <input type="text" id="id-number" class="id-info-bar" placeholder="Please Write Your ID Number Here">
+                </div>
+              </div>
+              <div class="id-info-container">
+                <div class="description-text">Phone Number:</div>
+                <div>
+                  <input type="text" id="phone-number" class="id-info-bar" placeholder="Please Write Your Phone Number Here">
+                </div>
+              </div>
+            </div>
+            <div class="address-container">
+              <div class="homeland-container">
+                <div class="country-container">
+                  <div class="description-text">Country Name:</div>
+                  <div>
+                    <input type="text" id="country" class="id-info-bar" placeholder="Please Write Your Country Name Here">
+                  </div>
+                </div>
+                <div class="city-container">
+                  <div class="description-text">City Name:</div>
+                  <div>
+                    <input type="text" id="city" class="id-info-bar" placeholder="Please Write Your City Name Here">
+                  </div>
+                </div>
+              </div>
+              <div class="address-bar-container">
+                <input type="text" id="home-address" class="address-bar" placeholder="Please Write Your Complete Address Here">
+              </div>
+            </div>
+          </div>
+          <div class="about-container">
+            <div class="description-text">
+              Please Describe Your Skills And Job Experiences Here:
+            </div>
+            <div>
+              <input type="text" id="qualifications" class="skill-set-bar" placeholder="Talk About Yourself Here">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">    <!-- This button is not working due to my lack of javascript knowledge to make it interactive. -->
+        <button title="Save & Submit">
+          Submit
+        </button>
+      </div>
+    </div>
+    
+  </body>
+</html>
