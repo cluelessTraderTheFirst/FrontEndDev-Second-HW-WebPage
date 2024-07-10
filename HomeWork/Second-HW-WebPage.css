@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -16,10 +17,11 @@ button {
 
 .p1-header {
   color: white;
-  background-color: black;
+  background-color: rgb(21, 21, 21);
   text-align: center;
   padding: 25px;
-  font-weight: bold; /* it doesnt match, i have to dl font weight package */
+  font-weight: 600; /* it doesnt match, i have to dl font weight package */
+  font-size: 16px;
 }
 
 .p1-header-link {
@@ -30,11 +32,28 @@ button {
 .navigation-bar-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 18px;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 1%;
+}
+
+.navigation-bar-home-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-align: center;
+}
+
+.navigation-bar-logo {
+  max-width: 40px;
+  padding-right: 5px;
+  padding-top: 6px;
+}
+
+.navigation-bar-home-text {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .navigation-bar-menu-container {
@@ -44,66 +63,76 @@ button {
 }
 
 .navigation-bar-menu-container button {
-  padding: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
+  padding: 9px;
   background-color: white;
   border: none;
+  font-size: 16px;
 }
 
 .navigation-bar-container a {
   text-decoration: none;
-  color: black;
+  color: rgb(21, 21, 21);
+  font-size: 16px;
 }
 
 .navigation-bar-sign-up {
-  background-color: black;
+  background-color: rgb(21, 21, 21);
   border: none;
-  border-radius: 5px;
-  padding: 7px;
+  border-radius: 10px;
+  padding: 9px 14px;
+  font-weight: bold;
 }
 
 #navigation-bar-sign-up-link {
   color: white;
 }
 
+.navigation-bar-login {
+  padding: 5px;
+}
+
 .p1-mid-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-wrap: yes;
-  padding: 50px 10px;
+  padding-right: 15%;
+  padding-left: 5%;
+  padding-bottom: 4%;
 }
 
 .p1-mid-container video {
-  max-width: 400px;
-  padding-right: 20px;
+  max-width: 50%;
 }
 
 .p1-description-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 400px;
+  max-width: 50%;
 }
 
 .p1-mid-container h1 {
-  font-size: 40px;
+  font-size: 4vw;
   font-weight: 600;
   max-width: 550px;
 }
 
 .p1-mid-container p {
-  max-width: 490px;
-  font-size: 18px;
+  max-width: 520px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .p1-mid-container button {
-  background-color: black;
+  background-color: rgb(21, 21, 21);
   max-width: fit-content;
-  padding: 15px;
+  padding: 15px 22px;
   border-radius: 10px;
-  align-self: center;
+  font-size: 16px;
 }
 
 .p1-mid-container a {
@@ -121,16 +150,20 @@ button {
 .p1-foot-text {
   color: gray;
   text-align: center;
-  padding-bottom: 30px;
+  font-size: 20px;
+  padding-bottom: 4%;
 }
 
 .p1-foot-logo-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-left: 19% ;
+  padding-right: 19%;
+  padding-bottom: 5% ;
 }
 .p1-foot-logo {
-  max-width: 100px;
+  max-width: 120px;
 }
 
 /*   ********** Page 2 **********   */
