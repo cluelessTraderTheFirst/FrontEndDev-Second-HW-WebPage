@@ -1,9 +1,9 @@
 /*   ********** Page 2 - Start **********   */
 
 .p2-container {
-display: flex;
-flex-direction: column;
-justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .p2-top-container {
@@ -15,25 +15,61 @@ justify-items: center;
 
 .p2-top-container h2 {
     text-align: center;
+    font-size: 60px;
+    font-weight: 500;
 }
 
 .video-text-container {
-display: flex;
-flex-direction: row;
-max-width: 80%;
-justify-content: space-around;
-margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    max-width: 1500px;
 }
 
 .ad-video {
-max-width: 50%;
+    max-width: 600px;
 }
 
 .tri-section-text {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    text-align: left;
+    text-wrap: wrap;
+}
+
+.p2-description-header, .p3-description-header {
+    text-wrap: wrap;
+    max-width: 460px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.p2-description-text, .p3-description-text {
+    text-wrap: wrap;
+    max-width: 430px;
+    font-size: large;
+}
+
+.mid-sign-up-button {
+    height: 50px;
+    width: 160px;
+    background-color: rgb(25, 25, 25);
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.mid-description-signup-link {
+    color: white;
+    text-decoration: none;
+    padding: auto;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .p2-bottom-container {
@@ -44,12 +80,16 @@ max-width: 50%;
     padding-right: 50px;
 }
 
+/*   ********** Page 2 -  End  **********   */
+/*   ********** Page 3 - Start **********   */
 
 .p3-bottom-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 70px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .p3-bottom-description-container {
@@ -58,15 +98,37 @@ max-width: 50%;
     justify-content: space-around;
 }
 
+.p3-bottom-text {
+    text-wrap: wrap;
+    max-width: 320px;
+    font-size: 26px;
+}
+
+.p3-bottom-link {
+    color: rgb(25, 25, 25);
+}
+
 .p3-bottom-logo-container {
-    background-color: aqua;
+    background-color: rgb(237, 237, 237);
     margin: auto;
 }
+
+/*   ********** Page 3 -  End  **********   */
+/*   ********** Page 4 - Start **********   */
 
 .p4-head-container {
     padding-top: 70px;
     padding-bottom: 50px;
     text-align: center;
+}
+
+.p4-header {
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.p4-head-text-container {
+    font-size: 24px;
 }
 
 .p4-mid-container {
@@ -77,7 +139,7 @@ max-width: 50%;
 }
 
 .list-container {
-    background-color: aquamarine;
+    background-color: rgb(247, 247, 247);
     min-width: 30%;
     margin: 10px;
 }
@@ -87,21 +149,48 @@ max-width: 50%;
    padding-bottom: 70px;
 }
 
+.p4-footer-link {
+    color: rgb(25, 25, 25);
+}
+
+/*   ********** Page 4 -  End  **********   */
+/*   ********** Page 5 - Start **********   */
+
 .p5-top-header-container {
     text-align: center;
     padding-bottom: 30px;
+}
+
+.p5-top-header {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.p5-top-text {
+    font-size: 24px;
+    padding: 20px
 }
 
 .p5-top-statistics-container {
     display: flex;
     flex-direction: row;
     text-align: center;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.p5-top-statistics-container p {
-    max-width: 300px;
+.statistics-number {
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.statistics-text {
     text-wrap: wrap;
-    padding: 20px;
+    max-width: 200px;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-bottom: 65px;
 }
 
 .p5-bottom-container {
@@ -109,7 +198,59 @@ max-width: 50%;
     background-color: rgb(25, 25, 25);
     text-align: center;
     padding-bottom: 30px;
+    text-wrap: wrap;
 }
+
+.p5-bottom-header-container {
+    max-width: 400px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.p5-bottom-header {
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.p5-bottom-description-container {
+    font-size: larger;
+    max-width: 250px ;
+    margin: auto;
+}
+
+.p5-bottom-strong {
+    padding-bottom: 30px;
+}
+
+.p5-bottom-button-container {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.p5-bottom-signup {
+    color: rgb(25, 25, 25);
+    background-color: white;
+    width: 140px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.p5-bottom-compare {
+    color: white;
+    background-color: rgb(25, 25, 25);
+    border: 1px solid white;
+    font-size: large;
+    width: 140px;
+    height: 43px;
+    border-radius: 10px;
+}
+
+/*   ********** Page 5 -  End  **********   */
+/*   ********** Page 6 - Start **********   */
 
 .p6-container {
     color: white;
@@ -120,6 +261,9 @@ max-width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 1300px;
+    margin: auto;
+    line-height: 40px;
 }
 
 .p6-sub {
