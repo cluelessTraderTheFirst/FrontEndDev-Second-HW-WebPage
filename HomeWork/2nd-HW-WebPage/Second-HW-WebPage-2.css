@@ -69,6 +69,11 @@
     text-align: center;
     padding-top: 14px;
     padding-bottom: 14px;
+    transition: 200ms;
+}
+
+.mid-sign-up-button:hover {
+    opacity: 0.8;
 }
 
 .mid-description-signup-link {
@@ -184,7 +189,7 @@
     padding-bottom: 20px;
 }
 
-.list-container dd:hover {
+.list-container span:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -287,6 +292,10 @@
     margin-right: 20px;
 }
 
+.p5-bottom-signup:hover {
+    background-color: rgb(217, 217, 217);
+}
+
 .p5-bottom-compare {
     color: white;
     background-color: rgb(25, 25, 25);
@@ -295,6 +304,11 @@
     width: 140px;
     height: 43px;
     border-radius: 10px;
+}
+
+.p5-bottom-compare:hover {
+    color: rgb(207, 207, 207);
+    border-color: rgb(207, 207, 207);
 }
 
 /*   ********** Page 5 -  End  **********   */
@@ -314,14 +328,49 @@
     line-height: 40px;
 }
 
+.p6-top-container h4 {
+    padding-bottom: 25px;
+}
+
 .p6-sub {
     display: flex;
     flex-direction: column;
 }
 
+.p6-sub select {
+    border: none;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.p6-sub select:hover {
+    color: rgb(207, 207, 207);
+}
+
 .p6-sub a {
     text-decoration: none;
     color: white;
+    transition: 200ms;
+}
+
+.p6-sub a:hover {
+    padding-left: 10px;
+}
+
+.p6-logo-continer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.p6-logo {
+    max-width: 30px;
+    border-radius: 15px;
+    border: none;
 }
 
 .p6-bottom-container {
