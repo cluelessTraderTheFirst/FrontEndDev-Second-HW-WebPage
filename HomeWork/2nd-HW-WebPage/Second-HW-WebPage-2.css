@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
+    padding-top: 70px;
 }
 
 .p2-top-container {
@@ -24,11 +25,14 @@
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
-    max-width: 1500px;
+    max-width: 1350px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
 }
 
 .ad-video {
-    max-width: 600px;
+    max-width: 580px;
 }
 
 .tri-section-text {
@@ -38,6 +42,8 @@
     max-width: 50%;
     text-align: left;
     text-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .p2-description-header, .p3-description-header {
@@ -49,8 +55,9 @@
 
 .p2-description-text, .p3-description-text {
     text-wrap: wrap;
-    max-width: 430px;
-    font-size: large;
+    max-width: 460px;
+    font-size: larger;
+    padding-bottom: 30px;
 }
 
 .mid-sign-up-button {
@@ -76,19 +83,21 @@
     padding-bottom: 70px;
 }
 
-.p2-description-container {
-    padding-right: 50px;
-}
+
 
 /*   ********** Page 2 -  End  **********   */
 /*   ********** Page 3 - Start **********   */
+
+.p3-container {
+    padding-top: 90px;
+}
 
 .p3-bottom-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 70px;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -96,29 +105,44 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .p3-bottom-text {
     text-wrap: wrap;
     max-width: 320px;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 .p3-bottom-link {
     color: rgb(25, 25, 25);
+    font-weight: 500;
+    padding-bottom: 20px;
 }
 
 .p3-bottom-logo-container {
-    background-color: rgb(237, 237, 237);
-    margin: auto;
+    background-color: rgb(247, 247, 247);
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+    align-content: center;
+}
+
+.p3-bottom-logo {
+    padding-left: 55px;
+}
+
+.p3-zap-logo {
+    padding-left: 30px;
 }
 
 /*   ********** Page 3 -  End  **********   */
 /*   ********** Page 4 - Start **********   */
 
 .p4-head-container {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 70px;
     text-align: center;
 }
 
@@ -136,21 +160,45 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .list-container {
     background-color: rgb(247, 247, 247);
     min-width: 30%;
     margin: 10px;
+    border-radius: 25px;
+    font-size: larger;
+    padding: 30px;
+}
+
+.list-container:hover {
+    color: white;
+    background-color: rgb(25, 25, 25);
+}
+
+.list-container dt {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.list-container dd:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .p4-foot-container {
    text-align: center;
    padding-bottom: 70px;
+   padding-top: 60px;
 }
 
 .p4-footer-link {
     color: rgb(25, 25, 25);
+    font-size: larger;
+    font-weight: bold;
 }
 
 /*   ********** Page 4 -  End  **********   */
@@ -281,6 +329,30 @@
     flex-direction: row;
     border-top: 1px solid darkgray;
     justify-content: space-around;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: small;
+}
+
+.p6-bottom-container a:hover {
+    color: rgb(202, 202, 202);
+}
+
+.footer-containers {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-lang-select {
+    color: white;
+    background-color: rgb(25, 25, 25);
+    border: none;
+    cursor: pointer;
+}
+
+.footer-lang-select:hover {
+    color: lightgray;
 }
 
 .p6-bottom-container a {
@@ -288,13 +360,11 @@
 }
 
 .p6-footer-links {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .p6-footer-policy {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }

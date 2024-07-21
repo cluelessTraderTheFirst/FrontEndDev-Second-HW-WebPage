@@ -9,6 +9,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  cursor: pointer;
+}
+
 video {
   max-width: 50%;
 }
@@ -30,7 +34,6 @@ video {
 
 .p1-header-link {
   color: white;
-  cursor: pointer;
 }
 
 .navigation-bar-container {
