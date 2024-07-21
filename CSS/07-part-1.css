@@ -1,0 +1,106 @@
+.boxing {
+  margin-top: 150px;
+  background-color: yellow;
+  color: blue;
+  width: 250px;
+  height: 250px;
+  border: 10px solid red;
+  margin-left: 50px;
+  outline: 100px solid rgba(104, 20, 199, 0.6);
+  outline-offset: 50px;
+  border-radius: 25px 2px 0px 200px;
+}
+
+.blah {
+  font-size: 46px;
+}
+
+.list {
+  display: flex;
+  background-color: grey;
+  margin-bottom: 20px;
+}
+
+.list div {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.box-1 {
+  border: 20px solid blue;
+}
+
+.box-2 {
+  border: 20px solid rgb(201, 57, 189);
+  position: relative; /* related to its own position */
+  top: -70px;
+  right: 50px;
+}
+
+.box-3 {
+  border: 20px solid rgb(43, 179, 61);
+}
+
+.list-2 {
+  display: flex;
+  background-color: grey;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.list-2 div {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.box-11 {
+  border: 20px solid blue;
+}
+
+.box-21 {
+  border: 20px solid rgb(201, 57, 189);
+  position: absolute; /* related to its parent */
+  bottom: -20px;
+  left: 350px;
+}
+
+.box-31 {
+  border: 20px solid rgb(43, 179, 61);
+}
+
+
+.list-3 {
+  display: flex;
+  background-color: grey;
+  margin-bottom: 20px;
+}
+
+.list-3 div {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.box-41 {
+  border: 20px solid blue;
+}
+
+.box-52 {
+  border: 20px solid rgb(201, 57, 189);
+  position: fixed; /* fixed to a position in viewport */
+  top: 0;
+  right: 55%;
+}
+
+.box-63 {
+  border: 20px solid rgb(43, 179, 61);
+}
+
+
+
+
