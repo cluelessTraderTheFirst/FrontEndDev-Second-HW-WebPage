@@ -1,0 +1,62 @@
+/* ":root { --global variable name: global variable value}
+:root is use to define a new global variable
+*/
+/* property: var(--global variable name)
+var(--) is use to call a global variable
+*/
+/* same rules are use to define local variables, except that local variable is define inside a class instead of ":root" 
+*/
+/* note that inheritency priority is first self style, then direct parent, and on and on to great great great grand parents */
+/* some functions are defined inside css */
+
+:root {
+  --box-color: rgb(240, 128, 128)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.test-box-1 {
+  background-color: var(--box-color);
+  margin-left: 50px;
+  margin-top: 50px;
+  align-content: center;
+  text-align: center;
+  height: 200px;
+  width: calc(100% - 800px);
+  transform: scale(2) rotate(30deg);
+}
+
+.test-box-2 {
+  background-color: aquamarine;
+  height: 200px;
+  width: 200px;
+  align-content: center;
+  text-align: center;
+  margin: 150px 150px;
+  transform: translate(150px);
+  transform: rotate(0deg);
+  transition: all 5s;
+}
+
+.test-box-2:hover {
+background-color: blueviolet;
+height: 400px;
+width: 400px;
+transform: rotate(360deg);
+border-radius: 150px 20px 150px 20px;
+font-size: 50px;
+color: white;
+}
+
+.test-box-3 {
+  background-color: rgb(255, 255, 0);
+  margin-left: 50px;
+  margin-top: 50px;
+  height: 200px;
+  width: 200px;
+  align-content: center;
+  text-align: center;
+  
+}
