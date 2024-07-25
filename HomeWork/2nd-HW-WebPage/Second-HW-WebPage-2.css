@@ -326,7 +326,9 @@
     max-width: 1300px;
     margin: auto;
     line-height: 40px;
+    padding-bottom: 50px;
 }
+
 
 .p6-top-container h4 {
     padding-bottom: 25px;
@@ -358,7 +360,7 @@
 }
 
 .p6-sub a:hover {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .p6-logo-continer {

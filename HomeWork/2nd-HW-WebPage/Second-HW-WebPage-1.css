@@ -22,7 +22,7 @@ video {
 .p1-head-container {
   padding-bottom: 20px;
 }
-
+ 
 .p1-header {
   color: white;
   background-color: rgb(21, 21, 21);
@@ -60,14 +60,16 @@ video {
 .navigation-bar-logo {
   max-width: 40px;
   padding-right: 5px;
-  padding-top: 6px;
+  padding-top: 6px; 
 }
+
 
 .navigation-bar-home-text {
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 5px; 
 }
+
 
 .navigation-bar-menu-container {
   display: flex;
