@@ -358,10 +358,15 @@
     cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
+    border: none;
 }
 
 .p6-sub select:hover {
     color: rgb(207, 207, 207);
+}
+
+.p6-sub select:active {
+    border: none;
 }
 
 .p6-sub a {
@@ -409,6 +414,20 @@
 .footer-containers {
     display: flex;
     flex-direction: row;
+}
+
+.footer-containers img {
+    width: 15px;
+    height: 20px;
+}
+
+.footer-location-address {
+    display: flex;
+}
+
+.footer-location-address img {
+   width: 20px;
+   padding-right: 5px;
 }
 
 .footer-lang-select {
