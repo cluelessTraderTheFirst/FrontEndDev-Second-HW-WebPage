@@ -344,6 +344,18 @@
 .p6-top-container h4 {
     padding-bottom: 25px;
 }
+ 
+.p6-videoask-container {
+display: flex;
+align-items: center;
+}
+
+.p6-videoask-img {
+    width: 25px;
+    height: 20px;
+    border-radius: 20px;
+    padding-right: 5px;
+}
 
 .p6-sub {
     display: flex;
