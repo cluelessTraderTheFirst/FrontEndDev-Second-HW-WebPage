@@ -311,19 +311,18 @@
     border-color: rgb(207, 207, 207);
 }
 
-/*   ********** Page 5 -  End  **********   */
-
-.p5-curved-boundry {
+.p5-curved-border {
     background-color: rgb(25, 25, 25);
 }
 
-.p5-curved-boundry span {
+.p5-curved-border span {
     display: block;
     background-color: white;
     width: 100%;
     border-radius: 0px 0px 100px 100px;
 }
 
+/*   ********** Page 5 -  End  **********   */
 /*   ********** Page 6 - Start **********   */
 
 .p6-container {
