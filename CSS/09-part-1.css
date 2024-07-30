@@ -1,0 +1,145 @@
+body {
+  box-sizing: border-box;
+}
+
+.box, .box-2 {
+  padding: 20px;
+  margin: 20px;
+  background-color: silver;
+  width: 100px;
+  height: 100px;
+}
+
+.box span {
+  background-color: red;
+}
+
+.box::before {
+  content: "Pseudo-Before";
+  background-color: rgb(54, 117, 211);
+}
+
+.box::after {
+  content: "Pseudo-After";
+  background-color: greenyellow;
+}
+
+.box-2::before {
+  content: "";
+  display: inline-block;
+  background-color: yellow;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.box-2::after {
+
+}
+
+.chat-box {
+  display: inline-block;
+  border-top: 10px solid greenyellow;
+  border-right: 5px solid transparent ;
+  border-left: 5px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.chat-text {
+  position: relative;
+  background-color: greenyellow;
+  width: 160px;
+  height: 100px;
+  padding-left: 30px;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.test-box {
+  background-color: lightblue;
+  display: inline-block;
+  margin: 30px;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.pseudo-test {
+  position: absolute;
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.gift-box-1, .gift-box-2, .gift-box-3 {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+}
+
+.gift-box-1 {
+  background-color: blueviolet;
+  bottom: 50px;
+  left: 180px;
+}
+
+.gift-box-2 {
+  background-color: yellow;
+  
+}
+
+.gift-box-2 p {
+  position: relative;
+  background-color: aqua;
+  z-index: 5;
+}
+
+.gift-box-3 {
+  background-color: orange;
+  bottom: 20px;
+  left: -180px;
+}
+
+.gift {
+  display: flex;
+  position: relative;
+}
+
+.overflow {
+  background-color: cornflowerblue;
+  width: 300px;
+  height: 150px;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.slider {
+  background-color: pink;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+
+.item {
+  background-color: rgb(132, 131, 133);
+  width: calc(25% + 6px);
+  height: 50%;
+  flex-shrink: 0;
+}
+
+.slider .item:nth-child(2n+1) {
+  background-color: yellow;
+}
