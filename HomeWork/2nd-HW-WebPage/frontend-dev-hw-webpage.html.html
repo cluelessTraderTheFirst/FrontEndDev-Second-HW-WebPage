@@ -4,8 +4,12 @@
     <title>
       Second HomeWork Webpage
     </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/HomeWork/2nd-HW-WebPage/frontend-dev-hw-webpage-1.css.css">
     <link rel="stylesheet" href="/HomeWork/2nd-HW-WebPage/frontend-dev-hw-webpage-2.css.css">
+    <link rel="stylesheet" href="/HomeWork/2nd-HW-WebPage/frontend-dev-hw-webpage-3-interactive.css">
   </head>
   <body>
     <div class="p1-header-container">
@@ -31,17 +35,21 @@
         <div class="navigation-bar-login-container">
           <a href="https://admin.typeform.com/login" class="navigation-bar-login">Log in</a>
           <button class="navigation-bar-sign-up"><a href="https://www.typeform.com/signup/" id="navigation-bar-sign-up-link">Sign up</a></button>
+          <button class="nav-bar-hamburger-menu">
+            <svg class="nav-hamburger-form"></svg>
+            <svg class="nav-hamburger-close-form"></svg>
+          </button>
         </div>
       </nav>
     </div>
     <div class="body-container">
       <div class="p1-container">
         <div class="p1-mid-container video-container">
-          <video src="https://www.typeform.com/static/homepage/hero/hero.webm" autoplay muted loop></video>
+          <video src="https://www.typeform.com/static/homepage/hero/hero.webm" autoplay muted loop id="video-container"></video>
           <div class="p1-description-container">
             <h1 class="p1-mid-header">Make forms worth filling out</h1>
             <p class="p1-mid-text">Get more data&mdash;like signups, feedback, and anything else&mdash;with forms designed to be <strong>refreshingly different.</strong></p>
-            <button class="p1-mid-button"><a href="https://www.typeform.com/signup/" class="p1-mid-link">Get started&mdash;it's free</a></button>
+            <button class="p1-mid-button" id="p1-mid-button"><a href="https://www.typeform.com/signup/" class="p1-mid-link">Get started&mdash;it's free</a></button>
           </div>
         </div>
         <div class="p1-foot-container">
@@ -53,7 +61,7 @@
             <img src="https://www.typeform.com/static/homepage/partners/mailchimp-logo.svg" class="p1-foot-logo">
             <img src="https://www.typeform.com/static/homepage/partners/hermes-logo.svg" class="p1-foot-logo">
             <img src="https://www.typeform.com/static/homepage/partners/hubspot-logo.svg" class="p1-foot-logo">
-            <img src="https://www.typeform.com/static/homepage/partners/hubspot-logo.svg" class="p1-foot-logo">
+            <img src="https://www.typeform.com/static/homepage/partners/barrys-logo.svg" class="p1-foot-logo">
           </div>
         </div>
       </div>
@@ -61,6 +69,7 @@
         <div class="p2-top-container">
           <h2 class="p2-header"><p>Refreshingly different,</p>
             <p>by design</p></h2>
+            <h3>Looks striking. Feels effortless.</h3>
         </div>
       </div>
       <div class="p2-bottom-container video-text-container">
@@ -69,7 +78,7 @@
           <p class="p2-description-text"><strong>Impress your form takers.</strong>  Catch their eye with striking visuals, and make form-filling feel effortless by replacing walls of questions with just one at a time.</p>
           <div class="p2-description-button mid-sign-up-button"><a class="mid-description-signup-link" href="https://www.typeform.com/signup/">Sign up</a></div>
         </div>
-        <video class="ad-video" src="https://www.typeform.com/static/homepage/video-text-module/for-them.webm" autoplay muted loop></video>
+        <video class="ad-video" src="https://www.typeform.com/static/homepage/video-text-module/for-them.webm" autoplay muted loop id="video-container"></video>
       </div>
       <div class="p3-container">
         <div class="p3-top-container video-text-container">

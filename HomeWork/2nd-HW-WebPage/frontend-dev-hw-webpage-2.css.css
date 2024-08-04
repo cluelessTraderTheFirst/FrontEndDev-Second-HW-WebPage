@@ -20,6 +20,10 @@
     font-weight: 500;
 }
 
+.p2-top-container h3 {
+    display: none;
+}
+
 .video-text-container {
     display: flex;
     flex-direction: row;

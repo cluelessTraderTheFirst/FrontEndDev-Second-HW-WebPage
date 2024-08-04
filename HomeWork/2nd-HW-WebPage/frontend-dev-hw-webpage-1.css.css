@@ -127,6 +127,10 @@ opacity: 0.8;
   transition: 700ms;
 }
 
+.nav-bar-hamburger-menu {
+  display: none;
+}
+
 .p1-mid-container {
   display: flex;
   flex-direction: row;
