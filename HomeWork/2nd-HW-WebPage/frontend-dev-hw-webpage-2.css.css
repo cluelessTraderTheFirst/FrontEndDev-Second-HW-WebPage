@@ -101,6 +101,10 @@
     padding-top: 90px;
 }
 
+.p3-top-container .p3-hidden-description-header {
+    display: none;
+}
+
 .p3-bottom-container {
     display: flex;
     flex-direction: row;
@@ -144,6 +148,10 @@
 
 .p3-zap-logo {
     padding-left: 30px;
+}
+
+#hidden-logo {
+    display: none;
 }
 
 /*   ********** Page 3 -  End  **********   */
@@ -342,6 +350,10 @@
     margin: auto;
     line-height: 40px;
     padding-bottom: 50px;
+}
+
+.hidden-column {
+    display: none;
 }
 
 

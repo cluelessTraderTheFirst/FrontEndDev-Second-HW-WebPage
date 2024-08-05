@@ -155,12 +155,134 @@
     width: 140px;
   }
 
+  .video-text-container #video-container {
+    max-width: 70%;
+  }
+
+  .p3-container .p3-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #p3-description-header {
+    display: none;
+  }
+
+  .p3-top-container .p3-hidden-description-header {
+    display: block;
+    padding-bottom: 30px ;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .p3-container {
+    padding-top: 0;
+  }
+ 
 
 
 
 
 
 
+
+
+
+
+
+  .p4-header-container .p4-header {
+    font-size: 40px;
+  }
+
+  .p4-head-text-container p {
+    font-size: 14px;
+  }
+
+  .p4-mid-container .list-container {
+    width: 45%;
+    font-size: 14px;
+  }
+
+  .p4-foot-container .p4-footer-link {
+    font-size: 16px;
+  }
+
+  .p5-top-header-container h3 {
+    font-size: 40px;
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+
+  .p5-top-header-container p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .p5-container .p5-top-statistics-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .p5-container .statistics-number-container {
+    display: flex;
+    margin: auto;
+    
+  }
+
+  .statistics-number-container .statistics-number {
+    font-size: 60px;
+    padding-top: 10px;
+  }
+
+  .statistics-number-container .statistics-text {
+    max-width: 400px;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .p5-bottom-container .p5-bottom-header-container {
+    max-width: 300px;
+  }
+
+  .p5-bottom-container .p5-bottom-header {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .p5-bottom-container .p5-bottom-description-container {
+    max-width: 170px;
+  }
+
+  .p5-bottom-container p {
+    font-size: 14px;
+  }
+
+  .p5-bottom-container strong {
+    line-height: 30px;
+  }
+
+  .p5-bottom-container button {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+  .p6-container .p6-top-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .p6-container .hidden-colomn {
+    display: block
+  }
+
+  .p6-container .p6-column {
+    width: 30%;
+  }
 
 
 

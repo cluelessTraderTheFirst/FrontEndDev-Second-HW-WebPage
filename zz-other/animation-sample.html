@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: flex;
+      transition: 1s;
+    }
+
+    .stable {
+      width: 100px;
+      height: 25px;
+      background-color: greenyellow;
+      margin-left: 50px;
+      overflow: hidden;
+      position: relative;
+      transition: 1s;
+      z-index: 1;
+    }
+
+    .moving {
+      width: 80px;
+      height: 24px;
+      background-color: rgb(218, 140, 23);
+      margin-left: 5px;
+      position: absolute;
+      left: 60px;
+      transition: 1s;
+    }
+
+    .container:hover .moving{
+      transform: translateX(100px);
+    }
+
+      /* ********************* */
+      
+    .logo-box {
+      display: flex;
+    }
+
+    .logo {
+      width: 250px;
+      height: 50px;
+      margin: 5px;
+      transition: 10s;
+    }
+
+    .logo:hover {
+      transform: translateX(5000px);
+    }
+
+    .box-1 {
+      background-color: aqua;
+    }
+
+    .box-2 {
+      background-color: pink;
+    }
+
+    .box-3 {
+      background-color: silver;
+    }
+
+    .box-4 {
+      background-color: red;
+    }
+
+    .box-5 {
+      background-color: green;
+    }
+
+    .box-6 {
+      background-color: violet;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stable"></div>
+    <div class="moving"></div>
+  </div>
+
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+
+  <div class="logo-box">
+    <div class="box-1 logo">1</div>
+    <div class="box-2 logo">2</div>
+    <div class="box-3 logo">3</div>
+    <div class="box-4 logo">4</div>
+    <div class="box-5 logo">5</div>
+    <div class="box-6 logo">6</div>
+  </div>
+
+
+
+
+
+  <script>
+
+
+
+
+
+  </script>
+</body>
+</html>
