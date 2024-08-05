@@ -200,6 +200,10 @@
     font-size: 14px;
   }
 
+  .p4-container .p4-mid-container {
+    max-width: 90%;
+  }
+
   .p4-mid-container .list-container {
     width: 45%;
     font-size: 14px;
@@ -274,14 +278,24 @@
   .p6-container .p6-top-container {
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 600px;
   }
 
   .p6-container .hidden-colomn {
-    display: block
+    display: flex;
+    flex-direction: column;
   }
 
   .p6-container .p6-column {
     width: 30%;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+
+
+
+  #footer-get-hide {
+    visibility: hidden;
   }
 
 
