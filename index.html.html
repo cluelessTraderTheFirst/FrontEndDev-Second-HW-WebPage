@@ -2,10 +2,14 @@
 <html>
   <head>
     <title>
-      Second HomeWork Webpage - Ahmad PanahiFar
+      Second HomeWork Webpage
     </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/HomeWork/2nd-HW-WebPage/frontend-dev-hw-webpage-1.css.css">
     <link rel="stylesheet" href="/HomeWork/2nd-HW-WebPage/frontend-dev-hw-webpage-2.css.css">
+    <link rel="stylesheet" href="/HomeWork/2nd-HW-WebPage/frontend-dev-hw-webpage-3-interactive.css">
   </head>
   <body>
     <div class="p1-header-container">
@@ -13,14 +17,14 @@
         Join us for a live Typeform for Growth demo &#x1F4C8; <a class="p1-header-link" href="https://successteam.typeform.com/to/abUO2p9C?_gl=1*saxzak*_gcl_au*MTk0NjQ3Njc3LjE3MjA4NzA5MTI.&tid=6f8ff8af-26b3-416d-9388-c49e235adc12&typeform-source=www.typeform.com">Save your spot</a>
       </p>
     </div>
-    <div class="p1-head-container">
+    <div class="p1-head-container" id="nav-container">
       <nav class="navigation-bar-container">
         <div class="navigation-bar-home-container">
           <a href="https://www.typeform.com/" class="navigation-bar-home-button"><img src="https://seeklogo.com/images/T/typeform-logo-A4FC2E0B41-seeklogo.com.png" class="navigation-bar-logo"></a>
           <a href="https://www.typeform.com/" class="navigation-bar-home-text">Typeform</a>
         </div>
         <div class="navigation-bar-menu-container">
-          <button class="navigation-bar-products">Products &#11163;</button>
+          <button class="navigation-bar-products">Products <span class="rotating-icon"> &#11163; </span></button>
           <button class="navigation-bar-solutions">Solutions &#11163;</button>
           <!-- <button class="navigation-bar-templates">Templates &#11163;</button>
           <button class="navigation-bar-integrations">Integrations &#11163;</button> -->
@@ -31,17 +35,21 @@
         <div class="navigation-bar-login-container">
           <a href="https://admin.typeform.com/login" class="navigation-bar-login">Log in</a>
           <button class="navigation-bar-sign-up"><a href="https://www.typeform.com/signup/" id="navigation-bar-sign-up-link">Sign up</a></button>
+          <button class="nav-bar-hamburger-menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwD9vnKk5oPrEHIthwjMIshbnqJgQDgdAvfA&s" class="nav-hamburger-form">
+            <svg class="nav-hamburger-close-form"></svg>
+          </button>
         </div>
       </nav>
     </div>
     <div class="body-container">
-      <div class="p1-container">
+      <section class="p1-container">
         <div class="p1-mid-container video-container">
-          <video src="https://www.typeform.com/static/homepage/hero/hero.webm" autoplay muted loop></video>
+          <video src="https://www.typeform.com/static/homepage/hero/hero.webm" autoplay muted loop id="video-container"></video>
           <div class="p1-description-container">
             <h1 class="p1-mid-header">Make forms worth filling out</h1>
             <p class="p1-mid-text">Get more data&mdash;like signups, feedback, and anything else&mdash;with forms designed to be <strong>refreshingly different.</strong></p>
-            <button class="p1-mid-button"><a href="https://www.typeform.com/signup/" class="p1-mid-link">Get started&mdash;it's free</a></button>
+            <button class="p1-mid-button" id="p1-mid-button"><a href="https://www.typeform.com/signup/" class="p1-mid-link">Get started&mdash;it's free</a></button>
           </div>
         </div>
         <div class="p1-foot-container">
@@ -53,50 +61,60 @@
             <img src="https://www.typeform.com/static/homepage/partners/mailchimp-logo.svg" class="p1-foot-logo">
             <img src="https://www.typeform.com/static/homepage/partners/hermes-logo.svg" class="p1-foot-logo">
             <img src="https://www.typeform.com/static/homepage/partners/hubspot-logo.svg" class="p1-foot-logo">
-            <img src="https://www.typeform.com/static/homepage/partners/hubspot-logo.svg" class="p1-foot-logo">
+            <img src="https://www.typeform.com/static/homepage/partners/barrys-logo.svg" class="p1-foot-logo">
           </div>
         </div>
-      </div>
-      <div class="p2-container">
+      </section>
+      <section class="p2-container">
         <div class="p2-top-container">
           <h2 class="p2-header"><p>Refreshingly different,</p>
             <p>by design</p></h2>
+            <h3>Looks striking. Feels effortless.</h3>
         </div>
-      </div>
-      <div class="p2-bottom-container video-text-container">
+      </section>
+      <section class="p2-bottom-container video-text-container">
         <div class="p2-description-container tri-section-text">
           <h3 class="p2-description-header">Looks striking. Feels effortless.</h3>
           <p class="p2-description-text"><strong>Impress your form takers.</strong>  Catch their eye with striking visuals, and make form-filling feel effortless by replacing walls of questions with just one at a time.</p>
           <div class="p2-description-button mid-sign-up-button"><a class="mid-description-signup-link" href="https://www.typeform.com/signup/">Sign up</a></div>
         </div>
-        <video class="ad-video" src="https://www.typeform.com/static/homepage/video-text-module/for-them.webm" autoplay muted loop></video>
-      </div>
-      <div class="p3-container">
+        <video class="ad-video" src="https://www.typeform.com/static/homepage/video-text-module/for-them.webm" autoplay muted loop id="video-container"></video>
+      </section>
+      <section class="p3-container">
         <div class="p3-top-container video-text-container">
-          <video class="ad-video" src="https://www.typeform.com/static/homepage/video-text-module/for-you.webm" autoplay muted loop></video>
+          <h3 class="p3-hidden-description-header">Embeds smoothly. Reveals more.</h3>
+          <video class="ad-video" src="https://www.typeform.com/static/homepage/video-text-module/for-you.webm" autoplay muted loop id="video-container"></video>
           <div class="p3-description-container tri-section-text">
-            <h3 class="p3-description-header">Embeds smoothly. Reveals more.</h3>
+            <h3 class="p3-description-header" id="p3-description-header">Embeds smoothly. Reveals more.</h3>
             <p class="p3-description-text"><strong>Collect more and better data.</strong> Embed forms where people see them, from web to email. Ask the right follow-up question at the right time to reveal deeper insights.</p>
             <div class="mid-sign-up-button"><a class="mid-description-signup-link" href="https://www.typeform.com/signup/">Sign up</a></div>
           </div>
         </div>
-      </div>
-      <div class="p3-bottom-container">
+      </section>
+      <section class="p3-bottom-container">
         <div class="p3-bottom-description-container">
           <p class="p3-bottom-text">Works with your existing workflow</p>
           <a href="https://www.typeform.com/connect/" class="p3-bottom-link">Browse 120+ integrations</a>
         </div>
-        <div class="p3-bottom-logo-container"> 
-          <img class="p3-bottom-logo p3-zap-logo" src="https://www.typeform.com/static/homepage/integrations/zapier-logo.svg">
+        <div class="p3-logo-box" id="logo-box">
+          <div class="p3-bottom-logo-container" id="non-hidden-logo"> 
+            <img class="p3-bottom-logo p3-zap-logo" src="https://www.typeform.com/static/homepage/integrations/zapier-logo.svg" id="integ-logo">
+          </div>
+          <div class="p3-bottom-logo-container" id="non-hidden-logo">
+             <img class="p3-bottom-logo p3-cal-logo" src="https://www.typeform.com/static/homepage/integrations/calendly-logo.svg" id="integ-logo">
+            </div>
+          <div class="p3-bottom-logo-container" id="non-hidden-logo">
+             <img class="p3-bottom-logo p3-hub-logo" src="https://www.typeform.com/static/homepage/integrations/hubspot-logo.svg" id="integ-logo">
+            </div>
+          <div class="p3-bottom-logo-container" id="hidden-logo">
+            <img class="p3-bottom-logo p3-slack-logo" src="https://www.typeform.com/static/homepage/integrations/slack-logo.svg" id="integ-logo">
+            </div>
+          <div class="p3-bottom-logo-container" id="hidden-logo">
+            <img class="p3-bottom-logo p3-notion-logo" src="https://www.typeform.com/static/homepage/integrations/notion-logo.svg" id="integ-logo">
+            </div>
         </div>
-        <div class="p3-bottom-logo-container">
-           <img class="p3-bottom-logo p3-cal-logo" src="https://www.typeform.com/static/homepage/integrations/calendly-logo.svg">
-          </div>
-        <div class="p3-bottom-logo-container">
-           <img class="p3-bottom-logo p3-hub-logo" src="https://www.typeform.com/static/homepage/integrations/hubspot-logo.svg">
-          </div>
-      </div>
-      <div class="p4-container">
+      </section>
+      <section class="p4-container">
         <div class="p4-head-container">
           <div class="p4-header-container"><h2 class="p4-header">Do it all with a form</h2></div>
           <div class="p4-head-text-container"><p>Whatever your goal, start with a ready-made template.</p></div>
@@ -126,7 +144,7 @@
               <dd>&#x2192; <span>Customer satisfaction</span></dd>
             </dl>
           </div>
-          <div class="p4-hr-list-container list-container">
+          <div class="p4-hr-list-container list-container" id="mobile-hidden-list">
             <dl>
               <dt>HR</dt>
               <dd>&#x2192; <span>Job application</span></dd>
@@ -134,7 +152,7 @@
               <dd>&#x2192; <span>Employee engagement</span></dd>
             </dl>
           </div>
-          <div class="p4-creator-list-container list-container">
+          <div class="p4-creator-list-container list-container" id="mobile-hidden-list">
             <dl>
               <dt>Creators</dt>
               <dd>&#x2192; <span>Contact details</span></dd>
@@ -142,7 +160,7 @@
               <dd>&#x2192; <span>Product recommendation</span></dd>
             </dl>
           </div>
-          <div class="p4-generalBusiness-list-container list-container">
+          <div class="p4-generalBusiness-list-container list-container" id="mobile-hidden-list">
             <dl>
               <dt>General business</dt>
               <dd>&#x2192; <span>Referal</span></dd>
@@ -154,8 +172,8 @@
         <div class="p4-foot-container">
           <a href="https://www.typeform.com/templates/" class="p4-footer-link">Browse all templates</a>
         </div>
-      </div>
-      <div class="p5-container">
+      </section>
+      <section class="p5-container">
         <div class="p5-top-container">
           <div class="p5-top-header-container">
             <h3 class="p5-top-header">Why Typeform?</h3>
@@ -191,7 +209,7 @@
           </div>
           <div class="p5-bottom-description-container">
               <p><strong class="p5-bottom-strong">Our Free Plan lets you:</strong></p>
-              <p>Create unlimited forms
+              <p> Create unlimited forms
               Access 3,000+ templates
               Start getting responses</p>
           </div>
@@ -200,10 +218,10 @@
             <button class="p5-bottom-compare">Compare plans</button>
           </div>
         </div>
-      </div>
-      <div class="p6-container">
+      </section>
+      <section class="p6-container">
         <div class="p6-top-container">
-          <div class="p6-product-list-container">
+          <div class="p6-product-list-container p6-column">
             <div class="p6-product-header">
               <h4>PRODUCT</h4>
             </div>
@@ -219,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="p6-templates-list-container">
+          <div class="p6-templates-list-container p6-column">
             <div class="p6-templates-header">
               <h4>TEMPLATES</h4>
             </div>
@@ -238,7 +256,7 @@
               </select>
             </div>
           </div>
-          <div class="p6-integrations-list-container">
+          <div class="p6-integrations-list-container p6-column">
             <div class="p6-integrations-header">
               <h4>INTEGRATIONS</h4>
             </div>
@@ -249,7 +267,7 @@
               <select><option value="rc">Recent categories</option></select>
             </div>
           </div>
-          <div class="p6-resources-list-container">
+          <div class="p6-resources-list-container p6-column">
             <div class="p6-resources-header">
               <h4>RESOURCES</h4>
             </div>
@@ -266,7 +284,7 @@
               <a href="">Developers / API</a>
             </div>
           </div>
-          <div class="p6-getToKnowUs-list-container">
+          <div class="p6-getToKnowUs-list-container p6-column">
             <div class="p6-getToKnowUs-header">
               <h4>GET TO KNOW US</h4>
             </div>
@@ -293,6 +311,28 @@
               </a>
             </div>
           </div>
+          <div class="hidden-column p6-column">
+              <div class="">
+                <a href="">Cookie Settings</a>
+              </div>
+              <div class="p6-hidden-policy">
+                <a target="_blank" href="https://admin.typeform.com/to/dwk6gt/?typeform-source=www.typeform.com&_gl=1*blaiba*_gcl_au*MTcyNjAxNTk5NC4xNzEyODYxNjYx">Check our Cookie Policy to delete cookies</a>
+              </div>
+              <div class="p6-hidden-report">
+                <a target="_blank" href="https://www.typeform.com/help/a/report-abuse-360034113252/">Report abuse</a>
+              </div>
+              <div class="hidden-language-container">
+                <div class="">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/White_Globe_Icon.png/1200px-White_Globe_Icon.png">
+                </div>
+                <div class="">
+                  <select name="language" class="hidden-lang-select">
+                    <option value="english">English</option>
+                    <option value="spanish">Espanol</option>
+                  </select>
+                </div>
+              </div>
+          </div>
         </div>
         <div class="p6-bottom-container">
           <div class="footer-location-container footer-containers">
@@ -303,7 +343,7 @@
               <p> With love, from Barcelona</p>
             </div>
           </div>
-          <div class="footer-language-container footer-containers">
+          <div class="footer-language-container footer-containers" id="footer-get-hide">
             <div class="">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/White_Globe_Icon.png/1200px-White_Globe_Icon.png">
             </div>
@@ -314,7 +354,7 @@
               </select>
             </div>
           </div>
-          <div class="p6-footer-links footer-containers">
+          <div class="p6-footer-links footer-containers" id="footer-get-hide">
             <div class="">
               <a href="">Cookie Settings</a>
             </div>
@@ -334,7 +374,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
+
+    <script>
+     // document.querySelector().addEventListener(click)
+    </script>
   </body>
 </html>
