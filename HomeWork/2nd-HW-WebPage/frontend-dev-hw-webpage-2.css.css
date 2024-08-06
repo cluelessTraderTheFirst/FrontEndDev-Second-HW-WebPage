@@ -136,24 +136,24 @@
 
 .p3-logo-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
 .p3-bottom-logo-container {
     background-color: rgb(247, 247, 247);
     display: flex;
-    width: 30%;
-    height: 130%;
+    width: 40%;
+    margin: 10px;
     border-radius: 50px;
-    justify-items: center;
-    align-self: center;
+    justify-content: center;
+    align-content: center;
     
 }
 
 .p3-bottom-logo {
-    
-    width: 200px;
+    margin: 30px;
+    width: 85%;
 }
 
 .p3-zap-logo {
