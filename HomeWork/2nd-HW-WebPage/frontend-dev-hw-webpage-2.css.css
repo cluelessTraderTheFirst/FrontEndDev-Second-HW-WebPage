@@ -110,7 +110,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 70px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -134,20 +134,31 @@
     padding-bottom: 20px;
 }
 
+.p3-logo-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .p3-bottom-logo-container {
     background-color: rgb(247, 247, 247);
-    width: 250px;
-    height: 250px;
+    display: flex;
+    width: 30%;
+    height: 130%;
     border-radius: 50px;
-    align-content: center;
+    justify-items: center;
+    align-self: center;
+    
 }
 
 .p3-bottom-logo {
-    padding-left: 55px;
+    
+    width: 200px;
 }
 
 .p3-zap-logo {
-    padding-left: 30px;
+    
+    max-width: 200px;
 }
 
 #hidden-logo {
