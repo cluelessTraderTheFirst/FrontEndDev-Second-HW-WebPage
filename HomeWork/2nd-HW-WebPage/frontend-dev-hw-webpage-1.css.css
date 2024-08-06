@@ -95,6 +95,12 @@ video {
   opacity: 0.8;
 }
 
+/*
+.navigation-bar-products:hover span{
+  transform: rotateX(180deg)
+}
+*/
+
 .navigation-bar-container a {
   text-decoration: none;
   color: rgb(21, 21, 21);
